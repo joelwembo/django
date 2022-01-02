@@ -1547,3 +1547,10 @@ class ListFiltersTests(TestCase):
         request.user = self.alfred
         with self.assertRaises(IncorrectLookupParameters):
             modeladmin.get_changelist_instance(request)
+            
+     def test_emptylistfieldfilter_invalid_lookup_params(self):
+        modeladmin = BookAdminWithEmptyFieldListFilter(Book, site)
+        request = self.request_factory.get('/q', {'author__isempty': 42})
+        request.user = self.alfred
+        with self.assertRaises(IncorrectLookupParameters):
+            modeladmin.get_changelist_instance(request)        
