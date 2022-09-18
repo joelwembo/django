@@ -4,3 +4,4 @@ django/contrib/gis/templates/**/*.js
 docs/_build/**/*.js
 node_modules/**.js
 tests/**/*.js
+cool

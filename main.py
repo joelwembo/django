@@ -4,7 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 def firstTest():
-    return "Sudfdfsdfjhskfjdccess"
+    return "Test Succeed"
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
